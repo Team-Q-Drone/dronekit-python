@@ -2372,7 +2372,7 @@ class Vehicle(HasObservers):
         :param Boolean raise_exception: If ``True`` the method will raise an exception on timeout,
             otherwise the method will return ``False``. The default is ``True`` (raise exception).
         """
-        timeout = kwargs.get('timeout', 30)
+        timeout = kwargs.get('timeout', 180)
         raise_exception = kwargs.get('raise_exception', True)
 
         # Vehicle defaults for wait_ready(True) or wait_ready()
